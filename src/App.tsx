@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <>
-     <h1>Online shop</h1>
+     <h1 className="text-3xl font-bold mb-6 bg-green-100 text-center" >Online shop</h1>
 
       <AddProduct addProduct={addProduct} />
       <ProductList products={products} addToCart={addToCart} />

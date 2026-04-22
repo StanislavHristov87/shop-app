@@ -7,16 +7,22 @@ type Props = {
 
 const ProductList = ({ products, addToCart }: Props) => {
     return (
-        <div>
-            <h2>Products</h2>
+        <div className="grid gap-4" >
+            <h2 
+            className="mt-11 text-xl bg-red-700"
+            >Products</h2>
 
             {products.map((p, index) => (
-                <div key={index} >
-                    <h3>{p.name}</h3>
-                    <p>{p.price}</p>
+                <div
+                className="bg-white p-4 mt-11 rounded-xl shadow flex justify-between items-center"
+                key={index} >
+                    <h3 className="font-bold" >{p.name}</h3>
+                    <p className="text-gray-600" >{p.price}</p>
 
 
-                <button onClick={() => addToCart(p)} >
+                <button 
+                className="bg-green-700 text-white px-3 py-1 rounded hover:bg-green-600"
+                onClick={() => addToCart(p)} >
                     Add to Cart
                 </button>
                 </div>
