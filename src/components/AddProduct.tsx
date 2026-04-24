@@ -1,12 +1,11 @@
 
 import { useState } from "react";
-import type { Product } from "../types";
+import { useShop } from "../context/ShopContext";
 
-type Props = {
-    addProduct: (product: Product) => void;
-};
 
-const AddProduct = ({ addProduct }: Props) => {
+const AddProduct = () => {
+    
+    const { addProduct } = useShop();
     
     const [name, setName] = useState("");
     const [price,setPrice] = useState("");
