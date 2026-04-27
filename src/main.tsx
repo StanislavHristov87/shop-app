@@ -5,7 +5,9 @@ import { ShopProvider } from './context/ShopContext.tsx'
 
 
 createRoot(document.getElementById('root')!).render(
+ 
   <ShopProvider>
   <App/>
  </ShopProvider>
+ 
 )

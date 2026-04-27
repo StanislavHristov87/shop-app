@@ -1,7 +1,11 @@
+
 import { useShop } from "../context/ShopContext";
 
  const Cart = () => {
     const {cart, removeFromCart} = useShop();
+
+   
+
 
     return (
         <div>

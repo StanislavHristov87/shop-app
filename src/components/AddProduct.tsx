@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { useShop } from "../context/ShopContext";
 
-
 const AddProduct = () => {
     
     const { addProduct } = useShop();
